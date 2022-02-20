@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+   <AddIn Type="Command">
+      <Assembly>RevitAPITemplateProject.dll</Assembly>
+      <ClientId>B191F278-80B1-49A0-A676-D5B2DE9FC40B</ClientId>
+      <FullClassName>RevitAPITemplateProject.Command</FullClassName>
+      <Text>Template Command</Text>
+      <VisibilityMode>AlwaysVisible</VisibilityMode>
+      <LanguageType>EN</LanguageType>
+      <VendorId>TPDC</VendorId>
+      <VendorDescription>ConstruNerd</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>TemplateApplication</Name>
+    <Assembly>RevitAPITemplateProject.dll</Assembly>
+    <AddInId>F88DD622-5325-4173-9C5B-58B6B761E512</AddInId>
+    <FullClassName>RevitAPITemplateProject.TemplateApplication</FullClassName>
+    <VendorId>TPDC</VendorId>
+    <VendorDescription>ConstruNerd</VendorDescription>
+  </AddIn>
+</RevitAddIns>

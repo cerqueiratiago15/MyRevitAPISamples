@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4245EB79-9545-4ED1-B036-40987CCD1CB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orcamento</RootNamespace>
+    <AssemblyName>Orcamento</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdWindows, Version=2017.11.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitDBAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitDBAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\FolderOganization.cs" />
+    <Compile Include="Classes\Services\ExcelUtilities.cs" />
+    <Compile Include="Forms\Filters\AddRemoveFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filters\AddRemoveFilters.Designer.cs">
+      <DependentUpon>AddRemoveFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Filter\FilterClass.cs" />
+    <Compile Include="Forms\Filters\CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filters\CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command.cs" />
+    <Compile Include="Forms\Filters\FiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filters\FiltersForm.Designer.cs">
+      <DependentUpon>FiltersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainUser.Designer.cs">
+      <DependentUpon>MainUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Filter\FilterUtilities.cs" />
+    <Compile Include="Classes\Parameters\ParametersValueProperties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Parameters\SelectParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parameters\SelectParameters.Designer.cs">
+      <DependentUpon>SelectParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Services\SelectTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Services\SelectTask.Designer.cs">
+      <DependentUpon>SelectTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Services\ServiceFiltersClass.cs" />
+    <Compile Include="Classes\Filter\SerializeFilters.cs" />
+    <Compile Include="Classes\Services\SerializeServices.cs" />
+    <Compile Include="Forms\Filters\SelectFiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filters\SelectFiltersForm.Designer.cs">
+      <DependentUpon>SelectFiltersForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Filters\AddRemoveFilters.resx">
+      <DependentUpon>AddRemoveFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filters\CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filters\FiltersForm.resx">
+      <DependentUpon>FiltersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainUser.resx">
+      <DependentUpon>MainUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\SelectParameters.resx">
+      <DependentUpon>SelectParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Services\SelectTask.resx">
+      <DependentUpon>SelectTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filters\SelectFiltersForm.resx">
+      <DependentUpon>SelectFiltersForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

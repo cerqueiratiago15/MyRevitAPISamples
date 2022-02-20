@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{CCFD55A4-EC82-4EB8-9867-18F57FA51B2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlPoints", "Projects\ControlPoints\ControlPoints.csproj", "{E4D47386-D5A6-4799-8D48-00402624C9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Five5DWithFilters", "Projects\Five5DWithFilters\Five5DWithFilters.csproj", "{4245EB79-9545-4ED1-B036-40987CCD1CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTemplate", "Projects\MyTemplate\MyTemplate.csproj", "{4F9E55C5-D9B3-495C-9AC3-1CA0FCC4B3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementsInRoom", "Projects\RoomDataInElements\ElementsInRoom\ElementsInRoom.csproj", "{AB2DE3E1-E438-496B-9485-42519C11F78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetRoomsParameter", "Projects\RoomDataInElements\SetRoomsParameter\SetRoomsParameter.csproj", "{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoomDataInElements", "RoomDataInElements", "{4C0F1DE0-F6DB-4B0F-838B-61704583682B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4D47386-D5A6-4799-8D48-00402624C9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D47386-D5A6-4799-8D48-00402624C9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D47386-D5A6-4799-8D48-00402624C9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D47386-D5A6-4799-8D48-00402624C9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4245EB79-9545-4ED1-B036-40987CCD1CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4245EB79-9545-4ED1-B036-40987CCD1CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4245EB79-9545-4ED1-B036-40987CCD1CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4245EB79-9545-4ED1-B036-40987CCD1CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9E55C5-D9B3-495C-9AC3-1CA0FCC4B3E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9E55C5-D9B3-495C-9AC3-1CA0FCC4B3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9E55C5-D9B3-495C-9AC3-1CA0FCC4B3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9E55C5-D9B3-495C-9AC3-1CA0FCC4B3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2DE3E1-E438-496B-9485-42519C11F78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2DE3E1-E438-496B-9485-42519C11F78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2DE3E1-E438-496B-9485-42519C11F78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2DE3E1-E438-496B-9485-42519C11F78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4D47386-D5A6-4799-8D48-00402624C9E0} = {CCFD55A4-EC82-4EB8-9867-18F57FA51B2F}
+		{4245EB79-9545-4ED1-B036-40987CCD1CB4} = {CCFD55A4-EC82-4EB8-9867-18F57FA51B2F}
+		{4F9E55C5-D9B3-495C-9AC3-1CA0FCC4B3E4} = {CCFD55A4-EC82-4EB8-9867-18F57FA51B2F}
+		{AB2DE3E1-E438-496B-9485-42519C11F78C} = {4C0F1DE0-F6DB-4B0F-838B-61704583682B}
+		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026} = {4C0F1DE0-F6DB-4B0F-838B-61704583682B}
+		{4C0F1DE0-F6DB-4B0F-838B-61704583682B} = {CCFD55A4-EC82-4EB8-9867-18F57FA51B2F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D552644-3D8B-4615-A8E9-D8DEB49605D2}
+	EndGlobalSection
+EndGlobal
