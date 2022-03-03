@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetRoomsParameter", "Projec
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoomDataInElements", "RoomDataInElements", "{4C0F1DE0-F6DB-4B0F-838B-61704583682B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadQuantities", "Projects\ReadQuantities\ReadQuantities.csproj", "{E35C1D95-323E-4975-A1DD-346E64FF03ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D32DD011-A0B7-49C8-AC88-FDDEB68D7026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35C1D95-323E-4975-A1DD-346E64FF03ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35C1D95-323E-4975-A1DD-346E64FF03ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35C1D95-323E-4975-A1DD-346E64FF03ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35C1D95-323E-4975-A1DD-346E64FF03ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

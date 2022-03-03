@@ -9,6 +9,8 @@ using Autodesk.Revit.UI;
 using System.Xml.Serialization;
 using System.Xml;
 using System.Xml.Linq;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Five5DWithFilters
 {
@@ -27,29 +29,33 @@ namespace Five5DWithFilters
         public List<ParameterToExport> Parameters { get; set; }
 
     }
-    [Serializable()]
-    [XmlRoot("ServiceFilters")]
-    public class ListOfServices: List<ServiceFiltersClass>
-    {
-
-    }
+    //[Serializable()]
+    //[XmlRoot("ServiceFilters")]
+    //[JsonObject(MemberSerialization.OptIn)]
+    //public class ListOfServices: List<ServiceFiltersClass>
+    //{
+      
+    //}
     [Serializable()]
     [XmlRoot("Filter")]
     public class FilterToExport
     {
         [XmlAttribute("FilterName")]
+        [JsonProperty("FilterName")]
         public string FilterName { get; set; }
 
         [XmlElement("ListFilterRules")]
+        [JsonProperty("ListFilterRules")]
         public List<FilterRulesToExport> Rules { get; set; }
 
         [XmlElement("Categories")]
+        [JsonProperty("Categories")]
         public List<string> CategoriesName { get; set; }
     }
 
     [Serializable()]
     [XmlRoot("ListOfFilters")]
-    public class ListOfFilters: List<FilterToExport>
+    public class ListOfFilters : List<FilterToExport>
     {
 
     }
@@ -58,21 +64,27 @@ namespace Five5DWithFilters
     public class FilterRulesToExport
     {
         [XmlAttribute("StorageType")]
+        [JsonProperty("StorageType")]
         public StorageType ParameterStorageType { get; set; }
 
         [XmlAttribute("ParameterID")]
+        [JsonProperty("ParameterID")]
         public string ParameterID { get; set; }//if is shared parameter I will insert the GUID the rest of the parameter the ID is negative
 
         [XmlElement("ParameterName")]
+        [JsonProperty("ParameterName")]
         public string ParameterName { get; set; }
 
         [XmlElement("Operator")]
+        [JsonProperty("Operator")]
         public string Operator { get; set; }
 
         [XmlElement("Value")]
+        [JsonProperty("Value")]
         public string Value { get; set; }
 
         [XmlElement("Shared")]
+        [JsonProperty("Shared")]
         public bool IsShared { get; set; }
     }
 
@@ -80,9 +92,11 @@ namespace Five5DWithFilters
     public class ParameterToExport
     {
         [XmlText]
+        [JsonProperty("ParameterName")]
         public string ParameterName { get; set; }
 
         [XmlAttribute("ParameterID")]
+        [JsonProperty("ParameterID")]
         public string ParameterID { get; set; }
     }
 

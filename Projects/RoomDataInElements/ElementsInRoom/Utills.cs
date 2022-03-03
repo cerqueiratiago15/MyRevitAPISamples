@@ -29,7 +29,14 @@ namespace ElementsInRoom
                     else if (location is LocationCurve)
                     {
                         Curve curve = (location as LocationCurve).Curve;
-                        point = (curve.GetEndPoint(1)+ curve.GetEndPoint(0))/2;
+                        
+                        //double x = (curve.GetEndPoint(1).X + curve.GetEndPoint(0).X) / 2;
+                        //double y = (curve.GetEndPoint(1).Y + curve.GetEndPoint(0).Y) / 2;
+                        //double z = (curve.GetEndPoint(1).Z + curve.GetEndPoint(0).Z) / 2;
+                        //XYZ p = new XYZ(x, y, z);
+                        //var middle = (curve.GetEndPoint(1) + curve.GetEndPoint(0)) / 2;
+                        var nwmiddle = curve.Evaluate(0.5, false);
+                        point =nwmiddle;
                     }
                     else
                     {
@@ -76,6 +83,7 @@ namespace ElementsInRoom
                     }                }
                 if (point!=null)
                 {
+                   
                     if (room.IsPointInRoom(point))
                     {
                         return true;
@@ -108,7 +116,8 @@ namespace ElementsInRoom
                         }
                         else
                         {
-                            p = room.Parameters.OfType<Parameter>().Where(x => x.IsShared).Where(k => k.GUID.ToString() == id).FirstOrDefault();
+                            
+                            p = room.Parameters.OfType<Parameter>().Where(x => x.IsShared).Where(x=>x.GUID!=null).Where(k => k.GUID.ToString() == id).FirstOrDefault();
                         }
                         if (p != null)
                         {

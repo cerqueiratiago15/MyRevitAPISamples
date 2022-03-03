@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>SetRoomsParameter.dll</Assembly>
+    <ClientId>4988A4E5-7719-4DFD-854D-6513753A894A</ClientId>
+    <FullClassName>SetRoomsParameter.Command</FullClassName>
+    <Text>Set Rooms Parameter</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <LanguageType>EN</LanguageType>
+    <VendorId>TPDC</VendorId>
+    <VendorDescription>Tiago</VendorDescription>
+  </AddIn>
+</RevitAddIns>

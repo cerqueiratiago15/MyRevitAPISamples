@@ -58,6 +58,7 @@ namespace ElementsInRoom
                                             {
                                             try
                                             {
+                                               
                                                 if (Utills.IsInRoom(room, element, doc, view))
                                                 {
                                                     roomAndBoundingBoxElements.GetElements.Add(element);
@@ -66,7 +67,7 @@ namespace ElementsInRoom
                                                 {
                                                     continue;
                                                 }
-                                                element.Dispose();
+                                                
                                             }
                                             catch 
                                             {
@@ -82,7 +83,7 @@ namespace ElementsInRoom
                                 {
                                     continue;
                                 }
-                                room.Dispose();
+                              
                             }
                         
 
@@ -96,7 +97,7 @@ namespace ElementsInRoom
 
                 using (Transaction t = new Transaction(doc,"Set values from Room"))
                 {
-                   var parameters= Utills.ReadParameters(roomsAndElements.FirstOrDefault().GetRoom);
+                   var parameters= Utills.ReadParameters(roomsAndElements[0].GetRoom );
                     if (parameters.Count>0)
                     {
                         t.Start();
@@ -132,7 +133,7 @@ namespace ElementsInRoom
                                 {
                                     try
                                     {
-                                        if (element.Parameters.OfType<Parameter>().Where(x=>x.Id==parameter.Id).Count()>0)
+                                        if (element.Parameters.OfType<Parameter>().Where(x=>x.Id.IntegerValue==parameter.Id.IntegerValue).Count()>0)
                                         {
                                             if (parameter.StorageType == StorageType.Double)
                                             {

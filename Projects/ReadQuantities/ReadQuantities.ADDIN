@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>ReadQuantities.dll</Assembly>
+    <ClientId>418723F1-AA9B-42D3-BE8B-1F9034A7361F</ClientId>
+    <FullClassName>ReadQuantities.Command</FullClassName>
+    <Text>Read Quantities</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <LanguageType>EN</LanguageType>
+    <VendorId>TPDC</VendorId>
+    <VendorDescription>Tiago</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>Five5DWithFilters.dll</Assembly>
+    <ClientId>999FE417-D969-486E-8B58-FCA2B78B6439</ClientId>
+    <FullClassName>Five5DWithFilters.Command</FullClassName>
+    <Text>Five 5D With Filters</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <LanguageType>EN</LanguageType>
+    <VendorId>TPDC</VendorId>
+    <VendorDescription>Tiago</VendorDescription>
+  </AddIn>
+</RevitAddIns>
