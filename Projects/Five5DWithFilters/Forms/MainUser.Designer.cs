@@ -45,8 +45,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnSaveService = new System.Windows.Forms.Button();
             this.btnResetControls = new System.Windows.Forms.Button();
-            this.btnExportProject = new System.Windows.Forms.Button();
-            this.btnImportProject = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -294,38 +292,6 @@
             this.btnResetControls.UseVisualStyleBackColor = false;
             this.btnResetControls.Click += new System.EventHandler(this.btnResetControls_Click);
             // 
-            // btnExportProject
-            // 
-            this.btnExportProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExportProject.BackColor = System.Drawing.Color.White;
-            this.btnExportProject.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnExportProject.FlatAppearance.BorderSize = 2;
-            this.btnExportProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportProject.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExportProject.Location = new System.Drawing.Point(523, 685);
-            this.btnExportProject.Name = "btnExportProject";
-            this.btnExportProject.Size = new System.Drawing.Size(151, 42);
-            this.btnExportProject.TabIndex = 1;
-            this.btnExportProject.Text = "Export";
-            this.btnExportProject.UseVisualStyleBackColor = false;
-            this.btnExportProject.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // btnImportProject
-            // 
-            this.btnImportProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnImportProject.BackColor = System.Drawing.Color.White;
-            this.btnImportProject.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnImportProject.FlatAppearance.BorderSize = 2;
-            this.btnImportProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImportProject.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnImportProject.Location = new System.Drawing.Point(759, 685);
-            this.btnImportProject.Name = "btnImportProject";
-            this.btnImportProject.Size = new System.Drawing.Size(151, 42);
-            this.btnImportProject.TabIndex = 1;
-            this.btnImportProject.Text = "Import";
-            this.btnImportProject.UseVisualStyleBackColor = false;
-            this.btnImportProject.Click += new System.EventHandler(this.button6_Click_1);
-            // 
             // MainUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,8 +300,6 @@
             this.ClientSize = new System.Drawing.Size(1608, 739);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnResetControls);
-            this.Controls.Add(this.btnImportProject);
-            this.Controls.Add(this.btnExportProject);
             this.Controls.Add(this.btnSaveService);
             this.Controls.Add(this.groupBox1);
             this.Name = "MainUser";
@@ -367,8 +331,6 @@
         private System.Windows.Forms.ListBox lboxParameters;
         private System.Windows.Forms.Button btnSeeService;
         private System.Windows.Forms.Button btnResetControls;
-        private System.Windows.Forms.Button btnExportProject;
-        private System.Windows.Forms.Button btnImportProject;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
     }

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>ElementsInRoom.dll</Assembly>
+    <ClientId>DDCC85B9-6017-4CDD-8836-7BEC7BDAB28E</ClientId>
+    <FullClassName>ElementsInRoom.Command</FullClassName>
+    <Text>Elements In Room</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <LanguageType>EN</LanguageType>
+    <VendorId>TPDC</VendorId>
+    <VendorDescription>Tiago</VendorDescription>
+  </AddIn>
+</RevitAddIns>

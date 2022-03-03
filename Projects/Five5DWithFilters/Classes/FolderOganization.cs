@@ -60,7 +60,6 @@ namespace Five5DWithFilters
             FileStream filterFile = null;
             string filterFileName = @"\Filters.xml";
             string filterFilePath = GetFilterFolder(projectFolder)+filterFileName;
-
             if (!File.Exists(filterFilePath))
             {
                 try
@@ -69,7 +68,7 @@ namespace Five5DWithFilters
                 }
                 catch
                 {
-                   
+
                 }
                 finally
                 {
@@ -77,33 +76,17 @@ namespace Five5DWithFilters
                     SerializeFilters.Serialize(filterFilePath, new FilterToExport());
                 }
             }
+
             return filterFilePath;
            
         }
-        public static string GetServiceXML(string projectFolder)
+        public static string GetServiceFilePath(string projectFolder)
         {
             FileStream serviceFile = null;
-            string serviceFileName = @"\Servicos.xml";
+            string serviceFileName = @"\Servicos.txt";
             string serviceFilePath = GetServicesFolder(projectFolder) + serviceFileName;
 
-            if (!File.Exists(serviceFilePath))
-            {
-                try
-                {
-                    serviceFile = File.Create(serviceFilePath);
-                }
-                catch
-                {
-
-                }
-                finally
-                {
-                    serviceFile.Close();
-                    SerializeServices.Serialize(serviceFilePath, new ListOfServices());
-
-
-                }
-            }
+         
             return serviceFilePath;
 
         }

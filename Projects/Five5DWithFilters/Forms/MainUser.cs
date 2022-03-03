@@ -256,23 +256,23 @@ namespace Five5DWithFilters
                 }
                 string path =FolderOganization.GetProjectFolderPath(this.Doc);
 
-                string filePath = FolderOganization.GetServiceXML(path);
+                string filePath = FolderOganization.GetServiceFilePath(path);
 
-                //var listOfServices = new ListOfServices();
+                var listOfServices = new List<ServiceFiltersClass>();
 
-                //var ser = SerializeServices.UnSerialize(filePath);
-                //if (ser != null)
-                //{
-                //    listOfServices.AddRange(ser);
-                //}
+                var ser = SerializeServices.DeserializeList(filePath);
+                if (ser != null)
+                {
+                    listOfServices.AddRange(ser);
+                }
 
                 ServiceFiltersClass service = new ServiceFiltersClass();
                 service.Filters = listOfToExports;
                 service.Parameters = listOfParaToExport;
                 service.ServiceName = serviceCod;
-                //listOfServices.Add(service);
+                listOfServices.Add(service);
 
-                //SerializeServices.Serialize(filePath, listOfServices);
+                SerializeServices.Serialize(filePath, listOfServices);
                 SerializeServices.AddService(filePath, service);
                 MessageBox.Show("Serviço salvo com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }

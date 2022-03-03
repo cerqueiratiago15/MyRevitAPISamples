@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>ControlPoints.dll</Assembly>
+    <ClientId>ADCE2273-D0DB-453E-A90D-145CCB17EE9A</ClientId>
+    <FullClassName>ControlPoints.Command</FullClassName>
+    <Text>Control Points</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <LanguageType>EN</LanguageType>
+    <VendorId>TPDC</VendorId>
+    <VendorDescription>Tiago</VendorDescription>
+  </AddIn>
+</RevitAddIns>
